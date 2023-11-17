@@ -1,5 +1,6 @@
 ﻿using CodePulse.API.Models.Domain;
-using CodePulse.API.Models.DTO;
+using CodePulse.API.Models.DTO.BlogPost;
+using CodePulse.API.Models.DTO.Categories;
 using CodePulse.API.Repositories.Interface;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -23,7 +24,7 @@ namespace CodePulse.API.Controllers
 
         // POST: {apibaseurl}/api/blogposts
         [HttpPost]
-        [Authorize(Roles = "Writer")]
+        [Authorize(Roles ="Writer")]
         public async Task<IActionResult> CreateBlogPost([FromBody] CreateBlogPostRequestDto request)
         {
             // Convert DTO to DOmain

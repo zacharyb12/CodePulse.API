@@ -1,5 +1,5 @@
 ﻿using CodePulse.API.Models.Domain;
-using CodePulse.API.Models.DTO;
+using CodePulse.API.Models.DTO.BlogPost;
 using CodePulse.API.Repositories.Interface;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
